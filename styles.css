@@ -3,9 +3,11 @@
     --color-secondary: #64827D;
     --color-tertiary: #919191;
     --color-white: #ffffff;
+    --color-tertiary-two: #65837E;
 
     --font-family:"Poppins";
     --font-x-small:0.8rem;
+    --font-x-medium: 1.4rem;
     --font-xx-large:2rem;
     --font-xxx-larger:4rem;
 
@@ -492,7 +494,7 @@
    .hamburger .ham-item:hover{
     color: var(--color-tertiary);
     transform: scale(2,2);
-    transition: var(--transition-duration);
+    transition: var(--transition-duration) ease-in-out;
     cursor: pointer;
    }
 
@@ -542,6 +544,7 @@
   width: 100%;
   flex-direction: column;
   justify-content: center;
+  background-color: red;
   /* align-items: center; */
   
 }
@@ -656,6 +659,7 @@ button {
   z-index: 3;
   top: 5rem;
   right: 5rem;
+  background-color: yellow;
   background-size: 35rem 35rem;
 
 }
@@ -771,9 +775,9 @@ button {
 
 
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1204px) {
   .arrow { 
-   left: 15rem;
+   left: 25rem;
    /* height: ; */
    }
  }
@@ -817,16 +821,16 @@ button {
 
 
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1204px) {
   .star {
-    left: 14rem;
+    left: 20rem;
     width: 5rem;
   }
   .star::after {
    
     top: 7.5rem;
     z-index: 5;
-    left: 15.5rem;
+    left: 21.5rem;
 
     /* width: 0.5rem; */
     
@@ -834,7 +838,7 @@ button {
   .star::before{
     top: 6.5rem;
     z-index: 5;
-    left: 15.5rem;
+    left: 21.5rem;
   }
   
 }
@@ -921,7 +925,7 @@ button {
 .section-header{
   text-align: center;
   position: relative;
-  width: 18%;
+  width: fit-content;
   margin:  0 auto;
   color: var(--color-white);
   text-transform: uppercase;
@@ -935,7 +939,7 @@ button {
   width: 2rem;
   background: var(--color-white);
   top: 0.5rem;
-  right: 0;
+  right: -4rem;
 }
 
 .section-header::before {
@@ -945,7 +949,7 @@ button {
   width: 2rem;
   background: var(--color-white);
   top: 0.5rem;
-  left: 0;
+  left: -4rem;
   /* transform: translate(-50%, -50%); */
 }
 
@@ -958,20 +962,30 @@ button {
 
   .section-header{
    
-    width:35%;
+    /* width:35%; */
   }
   
 }
 
 
+
   .section-body .inner-text {
     color: var(--color-white);
-    text-align: center;
+    /* text-align: center; */
     font-weight: bold;
     margin-top: 2rem;
-    text-transform: uppercase;
+    text-transform: capitalize;
 
     
+}
+.inner-text-2 {
+  color: var(--color-white);
+  /* text-align: center; */
+  /* font-weight: bold; */
+  margin-top: 2rem;
+  text-transform: capitalize;
+
+  
 }
 
 @media screen and (max-width: 768px) {
@@ -999,12 +1013,24 @@ button {
   /* overflow: hidden; */
 
   /* margin-left: 1rem; */
-  /* background-color: red; */
+  height: 30rem;
 }
 
-.slides-2 {
 
+.slide-2 {
+  align-self: flex-end;
 }
+
+.slide-1 {
+  align-self: flex-start;
+}
+
+.slide-4 {
+  align-self: flex-end;
+}
+
+
+
 
 
 .hamburger-item {
@@ -1023,7 +1049,7 @@ button {
   color: white;
   /* width: 28rem; */
   margin-left: 2.5rem;
-  min-width: 19%;
+  width: 20rem;
   height: 20rem;
   background-size: 14rem 20rem ; 
   background-repeat: no-repeat;  
@@ -1039,7 +1065,7 @@ button {
   width: 1rem;
   position: absolute;
   top: 1rem;
-  right: 1.5rem;
+  right: 2rem;
 }
 
 .hamburger-arrow {
@@ -1167,5 +1193,208 @@ button {
   }
   .slides-container {
     /* min-width: 50%; */
+  }
+}
+#adverts {
+  background-color: var(--color-tertiary-two);
+  height: auto;
+  width: 100%;
+}
+.adverts {
+  display: flex;
+  /* background-color: red; */
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 8rem;
+  height: 17rem;
+  color: white;
+  gap: 10rem;
+}
+.adverts-container {
+  display: flex;
+  flex-direction: column;
+  gap: .7rem;
+}
+
+.adverts-image {
+  flex: 1;
+  /* display: block; */
+  background-image: url('./images/Ads/ads-img.png');
+  height: 20rem; 
+  background-repeat: no-repeat;
+  width: 27rem;
+  background-size: 35rem 20rem;
+  background-position: top center;
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .adverts {
+    padding: .5rem 0rem;
+    height: 10rem;
+    color: white;
+    gap: 5rem;
+  }
+  .adverts-container {
+    gap: .5rem;
+  }
+  
+  .adverts-image {
+    flex: 1;
+    /* display: block; */
+    background-image: url('./images/Ads/ads-img.png');
+    height: 15rem; 
+    background-repeat: no-repeat;
+    width: 24rem;
+    background-size: 24rem 15rem;
+    background-position: top center;
+  }
+}  
+
+
+/* abouts */
+.abouts-container {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.abouts-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: space-between;
+  /* text-align: justify; */
+
+}
+
+.abouts-section:nth-child() {
+  color: red;
+  
+}
+.abouts-image {
+  flex: 1;
+  background-image: url('./images/About/container.png');
+  background-position: center;
+  height: 22rem;
+  width: 30rem;
+  background-repeat: no-repeat;
+  background-size: 30rem 22rem;
+  position: relative;
+
+}
+.abouts-image::before {
+  content: "";
+  position: absolute;
+  background-image: url('./images/About/person-1.png') ;
+  height: 40rem;
+  width: 40rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 40rem 40rem;
+  top: -11.5rem;
+  left: -5rem;
+}
+
+.share-img {
+  width: 2rem;
+
+}
+
+.share {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .abouts-container {
+    flex-direction: column;
+    
+  }
+
+  .abouts-image {
+   min-height: 22rem;
+   width: 34rem;
+   
+  }
+
+}
+
+.works-container {
+ 
+}
+
+.works-inner img {
+  width: 4rem;
+  /* background-color: red; */
+}
+.works-inner {
+  display: flex;
+  justify-content: center;
+  /* background-color: red; */
+  flex-direction: column;
+  gap: 1rem;
+  margin: 0 auto;
+  width: 100%;
+
+
+}
+.works-inner p {
+  text-align: center;
+  color: var(--color-tertiary);
+}
+
+.works-title {
+  color: var(--color-primary);
+  font-size: var(--font-x-medium);
+}
+
+
+.works-item {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  width: 20rem;
+  border-radius: 30px;
+  padding: 6rem 2rem 2rem 2rem ;
+  background-color: var(--color-white);
+  position: relative;
+
+}
+
+.works-track {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 7rem;
+
+}
+
+.works-item-before{
+  position: absolute;
+  top: -2rem ;
+  height: 4rem;
+  width: 4rem;
+  background-color: var(--color-tertiary-two);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+
+@media screen and (max-width: 768px) {
+  .works-track{
+    flex-direction: column;
+    margin: 5rem 5rem;
+    gap: 3rem;
+
+  }
+  .works-item {
+    width: 100%;
   }
 }
