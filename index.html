@@ -21,11 +21,17 @@
     <header class="header">
         <div class="container">
             <div class="header-container">
+                
                 <div class="logo row">
                     <img class="logo-image" src="./images/Header/logo.png">
                     <h1>Burger</h1>
 
                 </div>
+                <input type="checkbox" class="menu-btn" name="menu-btn" id="menu-btn" id="menu-btn">
+                <label for="menu-btn" class="menu-icon">
+                    <span class="ham-item-mobile visually-hidden">
+
+                </label>
 
                 <nav class="navbar">
                     <ul class="nav row">
@@ -57,13 +63,15 @@
                             <img class="header-btn" src="./images//Header/shop.png"/>
 
                         </li>
-                        <li class="ham-item">
+                        <!-- <li class="ham-item">
                             <img class="header-btn" src="./images//Header//hamburgerbtn.png"/>
 
-                        </li>
+                        </li> -->
                     </ul>
                     
                 </div>
+                
+                </span>
             </div>
 
     </div>
@@ -130,8 +138,8 @@
                         <p class="inner-text" style="text-align: center;">Locally sourced, organic ingredients for a fresh and eco-friendly experience</p>
                         <div class="slides-container">
 
-                            <div class="slides-track">
-                                <div class="slides slide-1 hamburger-container">
+                            <ul class="slides-track">
+                                <li class="slides slide-1 col-1-4 hamburger-container">
                                     <img class="hamburger-like" src="./images//section/heart.png" alt="">
                                    <div class="hamburger-item"></div>
                                     <div class="caption-title">
@@ -146,8 +154,8 @@
                                     <img class="hamburger-arrow" src="./images//section/arrowright.png" alt="">
     
     
-                                </div>
-                                <div class="slides slide-2 hamburger-container">
+                                </li>
+                                <li class="slides slide-2 col-1-4 hamburger-container">
                                     <img class="hamburger-like" src="./images//section/heart.png" alt="">
                                    <div class="hamburger-item"></div>
                                     <div class="caption-title">
@@ -162,8 +170,8 @@
                                     <img class="hamburger-arrow" src="./images//section/arrowright.png" alt="">
     
     
-                                </div>
-                                <div class="slides slide-3 hamburger-container">
+                                </li>
+                                <li class="slides slide-3 col-1-4 hamburger-container">
                                     <img class="hamburger-like" src="./images//section/heart.png" alt="">
                                    <div class="hamburger-item"></div>
                                     <div class="caption-title">
@@ -178,8 +186,8 @@
                                     <img class="hamburger-arrow" src="./images//section/arrowright.png" alt="">
     
     
-                                </div>
-                                <div class="slides slide-4 hamburger-container">
+                                </li>
+                                <li class="slides slide-4 col-1-4 hamburger-container">
                                     <img class="hamburger-like" src="./images//section/heart.png" alt="">
                                    <div class="hamburger-item"></div>
                                     <div class="caption-title">
@@ -194,8 +202,8 @@
                                     <img class="hamburger-arrow" src="./images//section/arrowright.png" alt="">
     
     
-                                </div>
-                                <div class="slides slide-5 hamburger-container">
+                                </li>
+                                <li class="slides slide-5 col-1-4 hamburger-container">
                                     <img class="hamburger-like" src="./images//section/heart.png" alt="">
                                    <div class="hamburger-item"></div>
                                     <div class="caption-title">
@@ -210,8 +218,8 @@
                                     <img class="hamburger-arrow" src="./images//section/arrowright.png" alt="">
     
     
-                                </div>
-                                <div class="slides slide-6 hamburger-container">
+                                </li>
+                                <li class="slides slide-6 col-1-4 hamburger-container">
                                     <img class="hamburger-like" src="./images//section/heart.png" alt="">
                                    <div class="hamburger-item"></div>
                                     <div class="caption-title">
@@ -226,9 +234,9 @@
                                     <img class="hamburger-arrow" src="./images//section/arrowright.png" alt="">
     
     
-                                </div>
+                                </li>
     
-                            </div>
+                            </ul>
                             <a class="prev" >
                                 <img class="prev-img" src="./images/section/arrowleft.svg" alt="">
                             </a>
@@ -313,8 +321,8 @@
                         <h3>How Does it Work</h3>
                     </header>
                    
-                        <div class="works-track">
-                            <div class="section-body works-item">
+                        <ul class="works-track">
+                            <li class="section-body col-1-3 works-item">
                                 <div class="works-item-before">
                                     <img src="./images/works/breakfast.png" alt="">
                                 </div>
@@ -328,8 +336,8 @@
         
                                 </div>
         
-                            </div>
-                             <div class="section-body works-item">
+                            </li>
+                             <li class="section-body col-1-3 works-item">
                                 <div class="works-item-before">
                                     <img src="./images/works/breakfast.png" alt="">
                                 </div>
@@ -343,10 +351,10 @@
         
                                 </div>
         
-                            </div>
+                            </li>
                       
                         
-                            <div class="section-body works-item">
+                            <li class="section-body col-1-3 works-item">
                                 <div class="works-item-before">
                                     <img src="./images/works/breakfast.png" alt="">
                                 </div>
@@ -360,8 +368,11 @@
         
                                 </div>
         
-                            </div>
-                        </div>
+                            </li>
+                        </ul>
+
+
+                        
                         
                            
                     
@@ -369,10 +380,146 @@
             </div>
     
         </section>
+
+         <section class="section" id="testimonial`">
+            
+                 <div class="test-container">
+                    <header class="section-header">
+                        <h3>Our Testimonies</h3>
+                    </header>
+
+                   <div class="test">
+                    <ul class="row testimonial-container">
+                        <li class="col-1-5  testimonial">
+                            <article class="burger-testimonial">
+                                <img class="burger-avatar" src="" alt="">
+                                <blockquote class="burger-quote">
+                                    <p>
+                                        The service was rather quick as well between the time the restaurant received the order and prepared the food, the driver picking it up and delivery time was great!
+                                        <cite> Merian Maheta</cite>
+                                    </p>
+
+                                    
+                                </blockquote>
+                                <p>Owner of KolaTower Company</p>
+
+        
+                            </article>
+                        </li>
+                        <li class="col-1-5 active testimonial">
+                            <article class="burger-testimonial">
+                                <img class="burger-avatar" src="" alt="">
+                                <blockquote class="burger-quote">
+                                    <p>
+                                        The service was rather quick as well between the time the restaurant received the order and prepared the food, the driver picking it up and delivery time was great!
+                                        <cite> Merian Maheta</cite>
+                                    </p>
+
+                                    
+                                </blockquote>
+                                <p>Owner of KolaTower Company</p>
+
+        
+                            </article>
+                        </li>
+                        <li class="col-1-5 testimonial">
+                            <article class="burger-testimonial">
+                                <img class="burger-avatar" src="" alt="">
+                                <blockquote class="burger-quote">
+                                    <p>
+                                        The service was rather quick as well between the time the restaurant received the order and prepared the food, the driver picking it up and delivery time was great!
+                                        <cite> Merian Maheta</cite>
+                                    </p>
+
+                                    
+                                </blockquote>
+                                <p>Owner of KolaTower Company</p>
+
+        
+                            </article>
+                        </li>
+                   </ul>
+                   
+
+                   </div>
+                   <div class="testimonial-nav">
+                    <img class="nav-testimonial" src="./images/section/arrowleft.svg" alt="">
+                    <img class="nav-testimonial" src="./images/section/arrowright.png" alt="">
+                    
+                   </div>
+                 </div>
+         </section>
         
         
 
     </main>
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-home">
+                   
+                    <header>
+                        <div class="logo row footer-logo">
+                            <img class="logo-image" src="./images/Header/logo.png">
+                            <h1>Burger</h1>
+        
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+        
+                    </header>
+
+                    
+                    <p>+91 9876543210</p>
+                    <p>vasanthaperumal377@gmail.com </p>
+                    <p>12th street,Vadapalani,
+                        Chennai,india</p>
+                    
+                </div>
+                <div class="footer-service">
+                    <header>
+                        <h2>Service</h2>
+                    </header>
+                    <ul>
+                        <li>Burger</li>
+                        <li>Menu</li>
+                        <li>Hot item's</li>
+                        <li>Service</li>
+                        <li>about</li>
+
+                    </ul>
+
+                </div>
+                <div class="footer-social">
+                    <header>
+                        <h2>Follow Us
+                        </h2>
+                    </header>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>Tweeter</li>
+                        <li>LinkedIn</li>
+                       
+
+                    </ul>
+                </div>
+                <div class="footer-update">
+                    <header>
+                        <h2>Subcribe For Updates
+                        </h2>
+                    </header>
+                    <div class="input-container">
+                        <input type="text" placeholder="Enter Email...">
+                        arrow
+                    </div>
+                </div>
+              
+            </div>
+            <p class="site">WWW.Burger.com©allrightreserve</p>
+        </div>
+       
+    </footer>
 
     <script src="./scripts.js"></script>
    
