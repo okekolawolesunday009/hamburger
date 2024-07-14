@@ -476,7 +476,7 @@
     
    }
    .nav .nav-item:hover::before{
-    width:  3rem;
+    width:  100%;
     background: var(--color-white);
 
     
@@ -523,7 +523,7 @@
       flex-direction: column;
       overflow: hidden;
       max-height: 0;
-      transition:  max-height .2s ease-out; */
+      transition:  max-height .2s ease-out; 
       
       /* overflow: hidden; */
     }
@@ -543,10 +543,10 @@
       font-size: var(--font-x-medium);
      }
     
-   }
+   
 
      /* menu btn */
-  .header-container .menu-btn{
+  .menu-btn{
     display: none;
     
 
